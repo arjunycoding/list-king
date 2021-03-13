@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+body {
+  background-color: #000;
+  font-family: 'Oswald', 'Futura', sans-serif;
+  margin: 0; 
+  padding: 0;
+}
+
+#page {
+    background-color: #403c3b;
+    margin: 0 auto 0 auto;
+    padding:10px;
+    height:auto;
+}
+
+.heading{
+    color:white;
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+
+.button{
+    background-color: #cb6868;
+    color: #f3dad1;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 10px;
+    float: right;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;}
+}
+
+div.button:hover{
+    background-color: red;
+    color: #e1cbc3;}
+}
