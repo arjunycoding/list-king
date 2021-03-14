@@ -10,15 +10,16 @@ function requestItem(){
     let button = document.createElement("button");
     button.setAttribute("id", "addItem");
     button.setAttribute("onclick", "displayItem()");
+    button.setAttribute("class", "addItemButton");
     content.appendChild(button);
     document.getElementById("addItem").innerHTML = "Add Item";
 }
 
 function displayItem(){
     // add an list item
-    let li = document.createElement("li");
+    let li = document.createElement("h2");
     let list = document.getElementById("list");
-    li.setAttribute("id", "h1");
+    li.setAttribute("class", "items");
     list.appendChild(li);
 
     let inputValue = document.getElementById("item").value;
