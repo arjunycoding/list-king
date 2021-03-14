@@ -1,9 +1,22 @@
 function validateForm(){
     let username = document.getElementById("uname").value;
     let password = document.getElementById("pwd").value;
-    if(username == "vidya" && password == "123"){
-        console.log("hi mom")
-    } else if(username == "yuva" && password == "456"){
-        console.log("hi dad");
+    console.log(password);
+    if(checkLogin(username, password)) {
+        console.log("Login successful!");
+    } else {
+        console.log("Are you trying to hack the system!")
     }
+}
+
+function checkLogin(username, password) {
+    let array = {
+        "yuva": "c3a19923c6d95039993edffeba0519e2",
+        "vidya": "7cdd5a2b0328204d43822424ae922fb4"
+    };
+    return array[username] == encrypt(password);
+}
+
+function encrypt(password) {
+    return CryptoJS.MD5(password).toString();
 }
