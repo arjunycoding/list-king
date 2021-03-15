@@ -17,7 +17,7 @@ function requestItem(){
 
 function displayItem(){
     // add an list item
-    let li = document.createElement("h2");
+    let li = document.createElement("li");
     let list = document.getElementById("list");
     li.setAttribute("class", "items");
     list.appendChild(li);
