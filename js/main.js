@@ -33,5 +33,4 @@ function displayMessege(){
     document.getElementById("messege").innerHTML = messeges[random];
 }
 
-displayMessege()
-
+displayMessege();
