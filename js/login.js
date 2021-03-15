@@ -3,7 +3,7 @@ function validateForm(){
     let password = document.getElementById("pwd").value;
     console.log(password);
     if(checkLogin(username, password)) {
-        console.log("Login successful!");
+        window.location.assign("https://arjunycoding.github.io/list-king/")
     } else {
         console.log("Are you trying to hack the system!")
     }

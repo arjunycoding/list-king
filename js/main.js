@@ -26,3 +26,11 @@ function displayItem(){
     li.innerHTML += `${inputValue}`;
     console.log(inputValue);
 }
+
+function displayMessege(){
+    var messeges = ["howdy", "hello", "hi"];
+    var random = Math.floor(Math.random() * 3);
+    document.getElementById("messege").innerHTML = messeges[random];
+}
+
+displayMessege()
