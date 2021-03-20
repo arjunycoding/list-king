@@ -17,7 +17,7 @@ function requestItem(){
 
 function displayItem(){
     // add an list item
-    let li = document.createElement("h2");
+    let li = document.createElement("li");
     let list = document.getElementById("list");
     li.setAttribute("class", "items");
     list.appendChild(li);
@@ -26,3 +26,11 @@ function displayItem(){
     li.innerHTML += `${inputValue}`;
     console.log(inputValue);
 }
+
+function displayMessege(){
+    var messeges = ["howdy", "hello", "hi"];
+    var random = Math.floor(Math.random() * 3);
+    document.getElementById("messege").innerHTML = messeges[random];
+}
+
+displayMessege();
