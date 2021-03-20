@@ -70,3 +70,11 @@ input[type='text'], input[type='password'] {
 ul{
     list-style-type: none;
 }
+
+#slide{
+    border:1px solid white;
+    width:200px;
+    height:70px;
+    padding:0px;
+    /* background:grey; */
+}

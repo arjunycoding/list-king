@@ -19,7 +19,9 @@ function displayItem(){
     // add an list item
     let li = document.createElement("li");
     let list = document.getElementById("list");
-    li.setAttribute("class", "items");
+    li.setAttribute("class", "items compleat");
+    li.setAttribute("id", "item")
+    li.setAttribute("onclick", "changeClass()");
     list.appendChild(li);
 
     let inputValue = document.getElementById("item").value;
@@ -27,10 +29,7 @@ function displayItem(){
     console.log(inputValue);
 }
 
-function displayMessege(){
-    var messeges = ["howdy", "hello", "hi"];
-    var random = Math.floor(Math.random() * 3);
-    document.getElementById("messege").innerHTML = messeges[random];
+function changeClass(){
+    let item = document.getElementById("item");
+    item.remove();
 }
-
-displayMessege();
