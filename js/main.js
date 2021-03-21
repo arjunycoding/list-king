@@ -19,13 +19,13 @@ function displayItem(){
     // add an list item
     let li = document.createElement("li");
     let list = document.getElementById("list");
-    li.setAttribute("class", "items compleat");
-    li.setAttribute("id", "item")
+    li.setAttribute("class", "items");
+    // li.setAttribute("id", "item")
     li.setAttribute("onclick", "changeClass()");
     list.appendChild(li);
 
     let inputValue = document.getElementById("item").value;
-    li.innerHTML += `${inputValue}`;
+    li.innerHTML = `${inputValue}`;
     console.log(inputValue);
 }
 
