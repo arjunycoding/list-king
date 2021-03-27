@@ -8,14 +8,16 @@
     <div id="page">
       <div class = "heading">
         <img src = "images/list-king.png" width="100px">
-        <h2 id = "messege"></h2>
       </div>
       <ul id="list">
       </ul>
       <br/>
       <br/>
-      <div class="button" onclick="requestItem()">Add Item</div>
-      <div id = "slide"><img src = "images/lion.png">Buy Now</div>
+      <div class = "button" id="newItemButton">Add Item</div>
+      <br/>
+      <input type="text" id="itemDescription" placeholder="Add description..." />
+      <button class = "button" id = "addBtn">add</button>
+      <p id = "validate"></p>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>

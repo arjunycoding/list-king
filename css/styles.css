@@ -2,8 +2,8 @@
 
 body {
   background-color: #000;
-  font-family: 'Oswald', 'Futura', sans-serif;
-  margin: 5; 
+  font-family: 'Oswald', 'Arial', sans-serif;
+  /* margin: 5;  */
   color:white;
 }
 
@@ -16,7 +16,7 @@ body {
 .heading{
     color:white;
     text-align:center;
-    margin-bottom: 20px;
+    /* margin-bottom: 0.0001px; */
     line-height:20px;
 }
 
@@ -26,28 +26,16 @@ body {
     border: none;
     border-radius: 5px;
     padding: 2px 8px;
-    margin-top: 0.5px;
     float: right;
     font-size: 18px;
     text-decoration: none;
     text-transform: uppercase;
+    margin-bottom: 1px;
 }
 
 div.button:hover{
     background-color: #ae5959;
     color: white;
-}
-.addItemButton{
-    background-color: #cb6868;
-    color: #f3dad1;
-    border: none;
-    border-radius: 5px;
-    padding: 4px 8px;
-    margin-top: 10px;
-    margin-left: 5px;
-    font-size: 18px;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 .items{
     color: #fff;
@@ -70,11 +58,31 @@ input[type='text'], input[type='password'] {
 ul{
     list-style-type: none;
 }
+ #itemDescription{
+     width:500px;
+}
 
-#slide{
-    border:1px solid white;
-    width:200px;
-    height:70px;
-    padding:0px;
-    /* background:grey; */
+ #addBtn{
+     float:right;
+}
+
+#validate{
+    background: #c51244 !important;
+    padding: 10px !important;
+    border-radius: 0 !important;
+    position: relative; 
+    display: inline-block;
+    box-shadow: 1px 1px 1px #aaaaaa;
+    margin-top: 10px;
+}
+
+#validate::before{
+    content: '';  
+    width: 0;  
+    height: 0;  
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #c51244;
+    position: absolute;  
+    top: -10px; 
 }
