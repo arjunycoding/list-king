@@ -1,10 +1,13 @@
+let error = $(".validate");
+error.hide();
 function validateForm(){
-    let username = document.getElementById("uname").value;
-    let password = document.getElementById("pwd").value;
+    let username = $("#uname").val();
+    let password = $("#pwd").val();
     if(checkLogin(username, password)) {
+        error.hide();
         window.location.assign("https://arjunycoding.github.io/list-king/")
     } else {
-        console.log("Are you trying to hack the system!")
+        error.show();
     }
 }
 

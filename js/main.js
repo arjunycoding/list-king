@@ -1,7 +1,7 @@
 let item = $("#itemDescription");
 let add = $("#addBtn");
 let newItemButton = $("#newItemButton");
-let validate = $("#validate");
+let validate = $(".validate");
 validate.hide();
 item.hide();
 add.hide();

@@ -66,23 +66,13 @@ ul{
      float:right;
 }
 
-#validate{
-    background: #c51244 !important;
-    padding: 10px !important;
-    border-radius: 0 !important;
-    position: relative; 
-    display: inline-block;
-    box-shadow: 1px 1px 1px #aaaaaa;
-    margin-top: 10px;
-}
-
-#validate:before{
-    content: '';  
-    width: 0;  
-    height: 0;  
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #c51244;
-    position: absolute;  
-    top: -10px; 
+.validate{
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('https://i.imgur.com/GnyDvKN.png') !important;
+    background-repeat:repeat-y;
+    height: 31px !important;;
+    padding-top: 4px;
+    border-radius: 10px;
+    width:220px;
 }
