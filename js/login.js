@@ -1,9 +1,19 @@
 let error = $(".validate");
+let loginbtn = $("#loginbtn");
+let showpwd = $("#showpwd");
+let username = $("#uname");
+let password = $("#pwd");
+let passwordJS = document.getElementById("pwd");
 error.hide();
+function togglePassword() {
+    if (passwordJS.type == "password") {
+        passwordJS.type = "text";
+    } else {
+        passwordJS.type = "password";
+    }
+}
 function validateForm(){
-    let username = $("#uname").val();
-    let password = $("#pwd").val();
-    if(checkLogin(username, password)) {
+    if(checkLogin(username.val(), password.val())) {
         error.hide();
         window.location.assign("https://arjunycoding.github.io/list-king/")
     } else {
@@ -24,3 +34,6 @@ function checkLogin(username, password) {
 function encrypt(password) {
     return CryptoJS.MD5(password).toString();
 }
+
+showpwd.on('click', togglePassword);
+loginbtn.on('click', validateForm);
