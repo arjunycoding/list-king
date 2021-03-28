@@ -20,7 +20,7 @@ function addItem(){
     } else{
         validate.hide();
     }
-    $(list).append("<li class = 'items'>" + newText +"</li>");
+    $(list).append("<li class = 'items'>" + newText +"<i class='fa fa-trash'></i> </li>");
     item.hide();
     add.hide();
     newItemButton.show();
