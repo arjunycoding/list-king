@@ -90,10 +90,6 @@ ul{
     border-radius: 10px;
     width:220px;
 }
-
-.fa{
-    float:right;
-    /* background:gray;
-    width:30px;
-    height:29px; */
+.title{
+    letter-spacing: 5px;
 }
