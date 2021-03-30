@@ -12,7 +12,7 @@ body {
     padding:10px;
     height:auto;
     width:480px;
-    margin-left: 35%;
+    margin-left: 0%;
 }
 
 .heading{
@@ -92,4 +92,32 @@ ul{
 }
 .title{
     letter-spacing: 5px;
+}
+
+.compleat{
+    background-color: gray;
+    color: lightgray;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-size: 24px;
+    letter-spacing: .05em;
+    list-style-type: none;
+    text-shadow: 2px 2px 1px black;
+    text-align: left;
+    height: 50px;
+    padding-left: 1em;
+    padding-top: 10px;
+}
+.fa-check{
+    color:green;
+    float:right;
+    margin-right:10px;
+}
+@media only screen and (max-width: 500px) {
+    body {
+      background-color: #403c3b;
+    }
+    .page{
+        max-width: 480px;
+    }
 }

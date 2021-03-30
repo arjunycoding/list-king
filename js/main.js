@@ -21,7 +21,6 @@ function addItem(){
     } else{
         validate.hide();
     }
-    // $(list).append("<li class = 'items'>" + newText +"<i class='fa fa-trash'></i> </li>");
     $(list).append("<li class = 'items'>" + newText + "</li>");
     item.hide();
     add.hide();
@@ -35,17 +34,18 @@ function deleteItem(el){
         $(this).remove();
       });
 }
-
-function doit(){
-    console.log("hii");    
-}
 li.on('click','li', function() {
+    if($("li").hasClass("compleat") === true){
     $(this).animate({
         opacity: 0.0,
         paddingLeft: '+=80'
       }, 500, function() {
         $(this).remove();
       })
+    }else{
+        $(this).addClass("compleat");
+        $("<span> <i class = 'fa fa-check'></i></span>").appendTo(this);
+    }
 })
 
 newItemButton.on('click', requestItem);
