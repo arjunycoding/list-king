@@ -80,13 +80,12 @@ ul{
 .validate{
     color: #D8000C;
     background-color: #FFBABA;
-    background-image: url('https://i.imgur.com/GnyDvKN.png') !important;
     background-repeat:repeat-y;
     height: 31px !important;;
-    padding-top: 4px;
-    padding-left: 35px;
+    padding-top: 10px;
+    padding-left: 5px;
     border-radius: 10px;
-    width:220px;
+    width:250px;
 }
 .title{
     letter-spacing: 5px;
@@ -110,6 +109,9 @@ ul{
     color:green;
     float:right;
     margin-right:10px;
+}
+.fa{
+    color:red;
 }
 @media only screen and (max-width: 500px) {
     body {
