@@ -2,7 +2,6 @@
 body {
   background-color: #000;
   font-family: 'Arial', sans-serif;
-  /* margin: 5;  */
   color:white;
 }
 
@@ -17,7 +16,6 @@ body {
 .heading{
     color:white;
     text-align:center;
-    /* margin-bottom: 0.0001px; */
     line-height:20px;
 }
 
@@ -86,6 +84,7 @@ ul{
     background-repeat:repeat-y;
     height: 31px !important;;
     padding-top: 4px;
+    padding-left: 35px;
     border-radius: 10px;
     width:220px;
 }
@@ -97,7 +96,7 @@ ul{
     background-color: gray;
     color: lightgray;
     border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    margin-bottom: 1px;
     font-size: 24px;
     letter-spacing: .05em;
     list-style-type: none;

@@ -35,17 +35,20 @@ function deleteItem(el){
       });
 }
 li.on('click','li', function() {
-    if($("li").hasClass("compleat") === true){
-    $(this).animate({
-        opacity: 0.0,
-        paddingLeft: '+=80'
-      }, 500, function() {
-        $(this).remove();
-      })
-    }else{
-        $(this).addClass("compleat");
-        $("<span> <i class = 'fa fa-check'></i></span>").appendTo(this);
-    }
+        if($(this).hasClass("compleat") === true){
+        $(this).animate({
+            opacity: 0.0,
+            paddingLeft: '+=80'
+        }, 500, function() {
+            $(this).remove();
+        })
+        console.log(this);
+        } else {
+            $(this).removeClass("items");
+            $(this).addClass("compleat");
+            $("<span> <i class = 'fa fa-check'></i></span>").appendTo(this);
+            console.log(this);
+        }
 })
 
 newItemButton.on('click', requestItem);
