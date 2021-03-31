@@ -5,6 +5,10 @@ let username = $("#uname");
 let password = $("#pwd");
 let passwordJS = document.getElementById("pwd");
 error.hide();
+let savedUname = localStorage.getItem("uname");
+let savedPwd = localStorage.getItem("pwd");
+username.val(savedUname);
+password.val(savedPwd);
 function togglePassword() {
     if (passwordJS.type == "password") {
         passwordJS.type = "text";
@@ -15,9 +19,11 @@ function togglePassword() {
 function validateForm(){
     if(checkLogin(username.val(), password.val())) {
         error.hide();
+        stroeLogin()
         window.location.assign("https://arjunycoding.github.io/list-king/")
     } else {
         error.show();
+        stroeLogin();
     }
 }
 
@@ -33,6 +39,10 @@ function checkLogin(username, password) {
 
 function encrypt(password) {
     return CryptoJS.MD5(password).toString();
+}
+function stroeLogin(){
+    localStorage.setItem("uname", username.val());
+    localStorage.setItem("pwd", password.val());
 }
 
 showpwd.on('click', togglePassword);
