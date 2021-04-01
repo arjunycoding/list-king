@@ -42,12 +42,10 @@ li.on('click','li', function() {
         }, 500, function() {
             $(this).remove();
         })
-        console.log(this);
         } else {
             $(this).removeClass("items");
             $(this).addClass("compleat");
             $("<span> <i class = 'fa fa-check'></i></span>").appendTo(this);
-            console.log(this);
         }
 })
 newItemButton.on('click', requestItem);
