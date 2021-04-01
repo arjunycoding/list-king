@@ -50,6 +50,5 @@ li.on('click','li', function() {
             console.log(this);
         }
 })
-
 newItemButton.on('click', requestItem);
 add.on('click', addItem);

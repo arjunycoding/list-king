@@ -106,7 +106,7 @@ ul{
     padding-top: 10px;
 }
 .fa-check{
-    color:green;
+    color:green !important;
     float:right;
     margin-right:10px;
 }
