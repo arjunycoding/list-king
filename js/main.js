@@ -6,6 +6,7 @@ let li = $("ul");
 let ad = $("#ad");
 validate.hide();
 item.hide();
+add.hide();
 ad.animate({marginLeft: "300px"}, 1000)
 function requestItem(){
     item.show();
