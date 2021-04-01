@@ -25,6 +25,7 @@ function addItem(){
     item.hide();
     add.hide();
     newItemButton.show();
+    item.val("");
 }
 function deleteItem(el){
     $(this).animate({
