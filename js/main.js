@@ -4,6 +4,7 @@ let newItemButton = $("#newItemButton");
 let validate = $(".validate");
 let li = $("ul");
 let ad = $("#ad");
+let adClose = $("#adClose");
 validate.hide();
 item.hide();
 add.hide();
@@ -22,7 +23,7 @@ function addItem(){
     let newText = item.val();
     if(newText == ""){
         validate.show();
-        validate.text("please enter something");
+        validate.html("<i class='fa fa-exclamation-triangle'></i> please enter something");
         return;
     } else{
         validate.hide();
@@ -57,3 +58,4 @@ li.on('click','li', function() {
 })
 newItemButton.on('click', requestItem);
 add.on('click', addItem);
+adClose.on('click', closeAd)
