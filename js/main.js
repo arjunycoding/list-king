@@ -5,6 +5,7 @@ let validate = $(".validate");
 let li = $("ul");
 let ad = $("#ad");
 let adClose = $("#adClose");
+let logout = $("#logout");
 validate.hide();
 item.hide();
 add.hide();
@@ -56,6 +57,10 @@ li.on('click','li', function() {
             $("<span> <i class = 'fa fa-trash'></i></span>").appendTo(this);
         }
 })
+function logOut(){
+    window.location.assign("https://arjunycoding.github.io/list-king/login.html")
+}
 newItemButton.on('click', requestItem);
+logout.on('click', logOut)
 add.on('click', addItem);
 adClose.on('click', closeAd)
