@@ -23,7 +23,7 @@ function addItem(){
     let newText = item.val();
     if(newText == ""){
         validate.show();
-        validate.html("<i class='fad fa-exclamation-triangle'></i> please enter something");
+        validate.html("<i class='fa fa-exclamation-triangle'></i> please enter something");
         return;
     } else{
         validate.hide();
