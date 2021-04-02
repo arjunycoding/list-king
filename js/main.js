@@ -8,7 +8,10 @@ validate.hide();
 item.hide();
 add.hide();
 ad.animate({marginLeft: "300px"}, 1000)
-ad.fadeOut(1000);
+function closeAd(){
+    ad.fadeOut(1000);
+    window.open
+}
 function requestItem(){
     item.show();
     add.show();
@@ -49,7 +52,7 @@ li.on('click','li', function() {
         } else {
             $(this).removeClass("items");
             $(this).addClass("compleat");
-            $("<span> <i class = 'fa fa-check'></i></span>").appendTo(this);
+            $("<span> <i class = 'fa fa-trash'></i></span>").appendTo(this);
         }
 })
 newItemButton.on('click', requestItem);
