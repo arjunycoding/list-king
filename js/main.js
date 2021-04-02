@@ -58,9 +58,9 @@ li.on('click','li', function() {
         }
 })
 function logOut(){
-    window.location.assign("https://arjunycoding.github.io/list-king/login.html")
+    window.location.assign("https://arjunycoding.github.io/list-king/login.html");
 }
 newItemButton.on('click', requestItem);
-logout.on('click', logOut)
+logout.on('click', logOut);
 add.on('click', addItem);
-adClose.on('click', closeAd)
+adClose.on('click', closeAd);
