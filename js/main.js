@@ -6,6 +6,10 @@ let li = $("ul");
 let ad = $("#ad");
 let adClose = $("#adClose");
 let logout = $("#logout");
+let request = $(".alert");
+let alertY = $("#yes");
+let alertN = $("#no");
+request.hide();
 validate.hide();
 item.hide();
 add.hide();
@@ -57,15 +61,24 @@ li.on('click','li', function() {
             $("<span> <i class = 'fa fa-trash'></i></span>").appendTo(this);
         }
 })
+function showRequest(){
+        request.fadeIn();
+        $("main").css(
+            {'opacity' : '0.1'}
+        )
+}
+function hideRequest(){
+    $("main").css(
+        {'opacity' : '1'}
+    )
+    request.fadeOut();
+}
 function logOut(){
-    let request = confirm("do you wan to leave?");
-    if(request){
-        window.location.assign("https://arjunycoding.github.io/list-king/login.html");
-    } else{
-        
-    }
+    window.location.assign("https://arjunycoding.github.io/list-king/login.html")
 }
 newItemButton.on('click', requestItem);
-logout.on('click', logOut);
+logout.on('click', showRequest);
 add.on('click', addItem);
 adClose.on('click', closeAd);
+alertN.on('click', hideRequest);
+alertY.on('click', logOut);

@@ -31,6 +31,13 @@ body {
     text-transform: uppercase;
     margin-bottom: 1px;
 }
+.logOutBtn{
+    color:black;
+    background-color: white;
+    position: absolute;
+    top:10px; 
+    right:10px;
+}
 
 div.button:hover{
     background-color: #ae5959;
@@ -151,6 +158,30 @@ ul{
 #adClose:hover {
     opacity: 1;
     color: white;
+}
+.alert{
+    width:350px;
+    height:200px;
+    padding:10px;
+    border:1px solid black;
+    color:black;
+    background-color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top:15%; 
+    right:15%;
+}
+.choice{
+    float:left;
+    background-color: gray;
+    color:white;
+}
+#no{
+    position: absolute;
+    right:10px;
+}
+#yes{
+    position: absolute;
 }
 @media only screen and (max-width: 500px) {
     body {

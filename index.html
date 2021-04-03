@@ -7,32 +7,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div id="page">
-      <div class = "heading">
-        <img src = "images/icon.png" width="100px">
-        <h2 class = "title">BUY GROCERIES</li>
+    <main>
+      <div id="page">
+        <div class = "heading">
+          <img src = "images/icon.png" width="100px">
+          <h2 class = "title">BUY GROCERIES</li>
+        </div>
+        <ul id="list">
+        </ul>
+        <br/>
+        <br/>
+        <div class = "button" id="newItemButton">Add Item</div>
+        <br/>
+        <input type="text" id="itemDescription" placeholder="Add description..." />
+        <br/>
+        <br/>
+        <button class = "button" id = "addBtn">add</button>
+        <br/>
+        <p class = "validate"></p>
+        <button class = "button logOutBtn" id = "logout">LOG OUT</button>
       </div>
-      <ul id="list">
-      </ul>
-      <br/>
-      <br/>
-      <div class = "button" id="newItemButton">Add Item</div>
-      <br/>
-      <input type="text" id="itemDescription" placeholder="Add description..." />
-      <br/>
-      <br/>
-      <button class = "button" id = "addBtn">add</button>
-      <br/>
-      <p class = "validate"></p>
+    </main>
+      <div class = "alert">
+        are you sure you wouls like to leave?
+        <br/><br/>
+        <button class = "button choice" id = "yes">OK</button>
+        <button class = "button choice" id = "no">cancel</button>
+      </div>
     </div>
-    <div id = "ad">
-      <span>
-        <span id = "adText">Welcome To List King</span>
-        <span id = "adClose">&times;</span>
-        <img id = "adImg" src = "images/icon.png" width = "80px"/>
-      </span>
-    </div>
-    <button class = "button" id = "logout">LOG OUT</button>
+    <main>
+      <div id = "ad">
+        <span>
+          <span id = "adText">Welcome To List King</span>
+          <span id = "adClose">&times;</span>
+          <img id = "adImg" src = "images/icon.png" width = "80px"/>
+        </span>
+      </div>
+    </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
   </body>
