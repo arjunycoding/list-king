@@ -46,3 +46,4 @@ function stroeLogin(){
 }
 showpwd.on('click', togglePassword);
 loginbtn.on('click', validateForm);
+console.log(encrypt("a.yuvAc*"))
