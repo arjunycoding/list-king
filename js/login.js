@@ -31,7 +31,7 @@ function checkLogin(username, password) {
     let array = {
         "yuva": "c3a19923c6d95039993edffeba0519e2",
         "vidya": "7cdd5a2b0328204d43822424ae922fb4",
-        "arjun": "451d3eb1573c7ebb70c08dfee9766509",
+        "arjun": "371ce016ae5924a296accf90fd2eb6fb",
         "Adhithya Yuvaraj": "0443af33c9526bf65f91abef00ed776e"
     };
     return array[username] == encrypt(password);
