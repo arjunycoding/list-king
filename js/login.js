@@ -44,6 +44,5 @@ function stroeLogin(){
     localStorage.setItem("uname", username.val());
     localStorage.setItem("pwd", password.val());
 }
-
 showpwd.on('click', togglePassword);
 loginbtn.on('click', validateForm);

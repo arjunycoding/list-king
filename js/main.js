@@ -9,10 +9,22 @@ let logout = $("#logout");
 let request = $(".alert");
 let alertY = $("#yes");
 let alertN = $("#no");
+let img = [];
 request.hide();
 validate.hide();
 item.hide();
 add.hide();
+function addIcon(image){
+    img.push(`images/${image}`)
+}
+function icon(image){
+    let icon = $("#icon");
+    icon.attr('src', img[image]);
+}
+addIcon("icon.png");
+addIcon("lion.png");
+addIcon("list-king.png");
+icon(0);
 ad.animate({marginLeft: "300px"}, 1000)
 function closeAd(){
     ad.fadeOut(1000);
