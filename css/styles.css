@@ -5,7 +5,7 @@ body {
   color:white;
 }
 
-#page {
+.page {
     background-color: #403c3b;
     padding:10px;
     height:auto;
