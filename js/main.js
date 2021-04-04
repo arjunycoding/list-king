@@ -76,9 +76,18 @@ function hideRequest(){
 function logOut(){
     window.location.assign("https://arjunycoding.github.io/list-king/login.html")
 }
+function time(){
+    let d = new Date();
+    let h = d.getHours();
+    let m = d.getMinutes();
+    let s = d.getSeconds()
+    $("#time").text(`${h}:${m}:${s}`);
+}
 newItemButton.on('click', requestItem);
 logout.on('click', showRequest);
 add.on('click', addItem);
 adClose.on('click', closeAd);
 alertN.on('click', hideRequest);
 alertY.on('click', logOut);
+time();
+setInterval(time, 1000);
