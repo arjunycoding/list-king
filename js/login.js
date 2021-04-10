@@ -31,7 +31,7 @@ function checkLogin(username, password) {
     let array = {
         "yuva": "c3a19923c6d95039993edffeba0519e2",
         "vidya": "7cdd5a2b0328204d43822424ae922fb4",
-        "arjun": "371ce016ae5924a296accf90fd2eb6fb",
+        "arjun": "360290aedc4d7dd839abc412727b6b00",
         "Adhithya Yuvaraj": "0443af33c9526bf65f91abef00ed776e"
     };
     return array[username] == encrypt(password);
@@ -46,4 +46,4 @@ function stroeLogin(){
 }
 showpwd.on('click', togglePassword);
 loginbtn.on('click', validateForm);
-console.log(encrypt("a.yuvAc*"))
+password.on('change', validateForm);
