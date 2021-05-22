@@ -55,7 +55,7 @@ li.on('click','li', function() {
         } else {
             $(this).removeClass("items");
             $(this).addClass("compleat");
-            $("<span> <i class = 'fa fa-trash'></i></span>").appendTo(this);
+            $("<span class = 'notifaction'>Compleated! Click to delete</span>").appendTo(this);
         }
 })
 function showRequest(){
