@@ -1,3 +1,4 @@
+/* SETUP */
 body {
   background-color: #000;
   font-family: 'Arial', sans-serif;
@@ -11,13 +12,16 @@ body {
     width:480px;
     margin-left: 0%;
 }
-
+/* HEADINGS */
 .heading{
     color:white;
     text-align:center;
     line-height:20px;
 }
-
+.title{
+    letter-spacing: 5px;
+}
+/* BUTTONS */
 .button{
     background-color: #cb6868;
     color: #f3dad1;
@@ -30,6 +34,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 1px;
 }
+
 .logOutBtn{
     color:black;
     background-color: white;
@@ -41,6 +46,23 @@ body {
 div.button:hover{
     background-color: #ae5959;
     color: white;
+}
+
+input[type='text'], input[type='password'] {
+    background-color: white;
+    color: #666;
+    font-family:'Arial', sans-serif;
+    font-size: 24px;
+    width: 96%;
+    padding: 4px 6px;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+/* ITEMS */
+ul{
+    list-style-type: none;
+    padding:10px;
+    background-image: url("../images/notepad.png");
 }
 .items{
     background-color: #ec8b68;
@@ -56,47 +78,12 @@ div.button:hover{
     padding-left: 1em;
     padding-top: 10px;
 }
-
-input[type='text'], input[type='password'] {
-    background-color: white;
-    color: #666;
-    font-family:'Arial', sans-serif;
-    font-size: 24px;
-    width: 96%;
-    padding: 4px 6px;
-    border: 1px solid #999;
-    border-radius: 8px;
-}
-
-ul{
-    list-style-type: none;
-    padding:10px;
-}
  #itemDescription{
-     width:460px;
-     padding:10px;
-     margin-left: 0px;
-     color:#3c3c3c;
+    width:460px;
+    padding:10px;
+    margin-left: 0px;
+    color:#3c3c3c;
 }
-
-#addBtn{
-     float:right;
-}
-
-.validate{
-    color: #D8000C;
-    background-color: #FFBABA;
-    background-repeat:repeat-y;
-    height: 31px !important;;
-    padding-top: 10px;
-    padding-left: 5px;
-    border-radius: 10px;
-    width:250px;
-}
-.title{
-    letter-spacing: 5px;
-}
-
 .compleat{
     background-color: gray;
     color: lightgray;
@@ -111,26 +98,38 @@ ul{
     padding-left: 1em;
     padding-top: 10px;
 }
-.fa-trash{
-    color:darkslategray !important;
-    text-shadow:none;
-    float:right;
-    margin-right:10px;
+/* FORMS */
+#addBtn{
+     float:right;
 }
+
+.validate{
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-repeat:repeat-y;
+    height: 31px !important;;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    width:250px;
+}
+/* ICONS */
 .fa{
     color:red;
 }
+/* ALERT */
 .alert{
     width:350px;
-    height:200px;
+    height:150px;
     padding:10px;
     border:1px solid black;
     color:black;
     background-color: white;
-    text-transform: uppercase;
+    text-transform: capitalize;
     position: absolute;
     top:15%; 
     right:15%;
+    text-align: center;
 }
 .choice{
     float:left;
@@ -139,18 +138,14 @@ ul{
 }
 #no{
     position: absolute;
+    bottom: 10px;
     right:10px;
 }
 #yes{
     position: absolute;
-}
-@media only screen and (max-width: 700px) {
-    body {
-      background-color: #403c3b;
-    }
-    .page{
-        max-width: 480px;
-    }
+    bottom: 10px;
+    left:10px;
+    background-color: rgb(22, 88, 255);
 }
 .notifaction{
     float: right;
@@ -159,4 +154,13 @@ ul{
     font-size: 12px;
     width:100px;
     text-align: center;
+}
+/* SCREEN */
+@media only screen and (max-width: 700px) {
+    body {
+      background-color: #403c3b;
+    }
+    .page{
+        max-width: 480px;
+    }
 }
