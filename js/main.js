@@ -3,29 +3,14 @@ let add = $("#addBtn");
 let newItemButton = $("#newItemButton");
 let validate = $(".validate");
 let li = $("ul");
-let ad = $("#ad");
-let adClose = $("#adClose");
 let logout = $("#logout");
 let request = $(".alert");
 let alertY = $("#yes");
 let alertN = $("#no");
-let img = [];
 request.hide();
 validate.hide();
 item.hide();
 add.hide();
-function addIcon(image){
-    img.push(`images/${image}`)
-}
-function icon(image){
-    let icon = $("#icon");
-    icon.attr('src', img[image]);
-}
-addIcon("icon.png");
-addIcon("lion.png");
-addIcon("list-king.png");
-icon(0);
-ad.animate({marginLeft: "300px"}, 1000)
 function closeAd(){
     ad.fadeOut(1000);
     window.open
@@ -88,18 +73,8 @@ function hideRequest(){
 function logOut(){
     window.location.assign("https://arjunycoding.github.io/list-king/login.html")
 }
-function time(){
-    let d = new Date();
-    let h = d.getHours();
-    let m = d.getMinutes();
-    let s = d.getSeconds()
-    $("#time").text(`${h}:${m}:${s}`);
-}
 newItemButton.on('click', requestItem);
 logout.on('click', showRequest);
 add.on('click', addItem);
-adClose.on('click', closeAd);
 alertN.on('click', hideRequest);
 alertY.on('click', logOut);
-time();
-setInterval(time, 1000);
