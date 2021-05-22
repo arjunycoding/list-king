@@ -1,3 +1,4 @@
+// declaering varibale
 let item = $("#itemDescription");
 let add = $("#addBtn");
 let newItemButton = $("#newItemButton");
@@ -7,14 +8,12 @@ let logout = $("#logout");
 let request = $(".alert");
 let alertY = $("#yes");
 let alertN = $("#no");
+// hideing items
 request.hide();
 validate.hide();
 item.hide();
 add.hide();
-function closeAd(){
-    ad.fadeOut(1000);
-    window.open
-}
+// item functions
 function requestItem(){
     item.show();
     add.show();
@@ -44,6 +43,22 @@ function deleteItem(el){
         $(this).remove();
       });
 }
+function showRequest(){
+    request.fadeIn();
+    $("main").css(
+        {'opacity' : '0.1'}
+    )
+}
+function hideRequest(){
+$("main").css(
+    {'opacity' : '1'}
+)
+request.fadeOut();
+}
+function logOut(){
+window.location.assign("https://arjunycoding.github.io/list-king/login.html")
+}
+// adding event listeners
 li.on('click','li', function() {
         if($(this).hasClass("compleat") === true){
         $(this).animate({
@@ -58,21 +73,6 @@ li.on('click','li', function() {
             $("<span class = 'notifaction'>Compleated! Click to delete</span>").appendTo(this);
         }
 })
-function showRequest(){
-        request.fadeIn();
-        $("main").css(
-            {'opacity' : '0.1'}
-        )
-}
-function hideRequest(){
-    $("main").css(
-        {'opacity' : '1'}
-    )
-    request.fadeOut();
-}
-function logOut(){
-    window.location.assign("https://arjunycoding.github.io/list-king/login.html")
-}
 newItemButton.on('click', requestItem);
 logout.on('click', showRequest);
 add.on('click', addItem);

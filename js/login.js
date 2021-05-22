@@ -1,3 +1,4 @@
+// declaering varibale
 let error = $(".validate");
 let loginbtn = $("#loginbtn");
 let showpwd = $("#showpwd");
