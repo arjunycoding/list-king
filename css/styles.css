@@ -62,7 +62,6 @@ input[type='text'], input[type='password'] {
 ul{
     list-style-type: none;
     padding:10px;
-    background-image: url("../images/notepad.png");
 }
 .items{
     background-color: #ec8b68;
